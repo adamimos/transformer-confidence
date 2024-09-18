@@ -1,0 +1,8 @@
+torch
+nnsight
+numpy
+pyyaml
+transformers
+
+[bigbench]
+bigbench-api@ git+https://github.com/google/BIG-bench.git#subdirectory=bigbench

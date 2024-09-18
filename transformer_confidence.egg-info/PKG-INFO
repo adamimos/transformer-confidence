@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: transformer-confidence
+Version: 0.1
+Summary: A package for running LLM experiments on transformer confidence with BigBench and NNDIF
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://your-repo-url
+Project-URL: Bug Tracker, https://your-repo-url/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: nnsight
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: transformers
+Provides-Extra: bigbench
+Requires-Dist: bigbench-api@ git+https://github.com/google/BIG-bench.git#subdirectory=bigbench ; extra == "bigbench"
+
+
+
+## Installation
+
+pip install git+https://github.com/google/BIG-bench.git

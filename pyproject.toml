@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transformer-confidence"
+version = "0.1"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+description = "A package for running LLM experiments on transformer confidence with BigBench and NNDIF"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch",
+    "nnsight",
+    "numpy",
+    "pyyaml",
+    "transformers",
+]
+
+[project.optional-dependencies]
+bigbench = ["bigbench-api @ git+https://github.com/google/BIG-bench.git#subdirectory=bigbench"]
+
+[project.urls]
+"Homepage" = "https://your-repo-url"
+"Bug Tracker" = "https://your-repo-url/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["transformer_confidence*"]

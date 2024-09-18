@@ -1,0 +1,9 @@
+task_name: 'simple_arithmetic'
+model_name: 'meta-llama/Meta-Llama-2-70b'
+api_key: 'YOUR_NNDIF_API_KEY'
+prompt_type: 'FIRST_ORDER_PROMPT'
+prompt_templates:
+  FIRST_ORDER_PROMPT: "Question: {question}\nChoices:\n{choices}\nAnswer:\n"
+  SECOND_ORDER_PROMPT_2AFC: "..."
+log_path: 'logs/experiment.log'
+storage_path: 'data/outputs/'
